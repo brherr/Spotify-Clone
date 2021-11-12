@@ -3,6 +3,7 @@ import './Player.css';
 import Sidebar from './Sidebar';
 import Body from './Body';
 import Footer from './Footer';
+
 function Player({ spotify }) {
     return (
         <div className='player'>
@@ -10,8 +11,7 @@ function Player({ spotify }) {
                 <Sidebar />
                 <Body spotify={spotify} />
             </div>
-            
-            <Footer />
+            <Footer spotify={spotify} />
         </div>
     )
 }
